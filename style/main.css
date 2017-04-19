@@ -1,0 +1,93 @@
+body {
+  margin: 0; }
+
+section {
+  min-height: 110vh; }
+
+section:nth-child(odd) {
+  background-color: red; }
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0; }
+  header .menu-hidden {
+    position: absolute;
+    top: -125px;
+    right: -125px;
+    width: 250px;
+    height: 250px;
+    background-color: #00c2ff;
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .menu-hidden .rotate:hover {
+    cursor: pointer; }
+  header .menu-show {
+    width: 5000px;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .rotate {
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .expand {
+    width: 3000px;
+    height: 300vh;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .fa {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 40px;
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .fa:hover {
+    cursor: pointer;
+    font-size: 60px;
+    top: 20px;
+    right: 20px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .rotate180 {
+    transform: rotate(-235deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  header .menu-container {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .menu-container p {
+      font-size: 45px;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: solid gray 1px;
+      color: gray; }
+    header .menu-container p:hover {
+      color: black;
+      border-color: black;
+      cursor: pointer; }
