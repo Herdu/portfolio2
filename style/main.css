@@ -2,7 +2,7 @@ body {
   margin: 0; }
 
 section {
-  min-height: 110vh; }
+  min-height: 130vh; }
 
 section:nth-child(odd) {
   background-color: red; }
@@ -36,6 +36,8 @@ header {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
+  header .menu-hidden:hover:not(.rotate) {
+    cursor: pointer; }
   header .rotate {
     transform: rotate(0deg);
     -webkit-transition: all 0.5s ease-in-out;
@@ -82,12 +84,25 @@ header {
     left: 50%;
     transform: translate(-50%, -50%); }
     header .menu-container p {
-      font-size: 45px;
-      margin-bottom: 30px;
+      font-size: 75px;
+      margin-bottom: 100px;
       padding-bottom: 10px;
       border-bottom: solid gray 1px;
       color: gray; }
+    @media screen and (min-width: 768px) {
+      header .menu-container p {
+        font-size: 40px; } }
     header .menu-container p:hover {
       color: black;
       border-color: black;
       cursor: pointer; }
+
+section[id=main] {
+  background-color: blue;
+  background: url("../img/21.jpg"); }
+
+.scrollDown {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 500px; }

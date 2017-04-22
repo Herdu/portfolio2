@@ -22,7 +22,7 @@ body {
   margin: 0;
 }
 section{
-  min-height: 110vh;
+  min-height: 130vh;
 }
 section:nth-child(odd){
   background-color: red;
@@ -64,6 +64,9 @@ header{
 
     @include transition;
 
+  }
+  .menu-hidden:hover:not(.rotate){
+    cursor: pointer;
   }
   .rotate{
     transform: rotate(0deg);
@@ -117,11 +120,16 @@ header{
     transform: translate(-50%, -50%);
 
     p{
-      font-size: 45px;
-      margin-bottom: 30px;
+      font-size: 75px;
+      margin-bottom: 100px;
       padding-bottom: 10px;
       border-bottom: solid gray 1px;
       color: gray;
+    }
+    @media screen and (min-width: 768px) {
+      p{
+        font-size: 40px;
+      }
     }
     p:hover{
       color: black;
@@ -133,4 +141,17 @@ header{
 
 
 
+section[id=main]{
+  background-color: blue;
+  background: url('../img/21.jpg');
+}
 
+
+
+
+.scrollDown{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 500px;
+}
