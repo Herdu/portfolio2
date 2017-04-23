@@ -22,7 +22,7 @@ body {
   margin: 0;
 }
 section{
-  min-height: 130vh;
+  min-height: 100vh;
 }
 section:nth-child(odd){
   background-color: red;
@@ -32,6 +32,7 @@ header{
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 20;
 
   .menu-hidden{
     position: absolute;
@@ -143,7 +144,25 @@ header{
 
 section[id=main]{
   background-color: blue;
-  background: url('../img/21.jpg');
+  background: url('../img/bg2.jpg');
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  .invitation-container{
+    bottom: 100px;
+    width: 200px;
+    position: absolute;
+
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .fa{
+      font-size: 70px;
+    }
+  }
 }
 
 

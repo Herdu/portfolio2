@@ -2,7 +2,7 @@ body {
   margin: 0; }
 
 section {
-  min-height: 130vh; }
+  min-height: 100vh; }
 
 section:nth-child(odd) {
   background-color: red; }
@@ -10,7 +10,8 @@ section:nth-child(odd) {
 header {
   position: fixed;
   top: 0;
-  right: 0; }
+  right: 0;
+  z-index: 20; }
   header .menu-hidden {
     position: absolute;
     top: -125px;
@@ -99,7 +100,20 @@ header {
 
 section[id=main] {
   background-color: blue;
-  background: url("../img/21.jpg"); }
+  background: url("../img/bg2.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  section[id=main] .invitation-container {
+    bottom: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    section[id=main] .invitation-container .fa {
+      font-size: 70px; }
 
 .scrollDown {
   position: relative;

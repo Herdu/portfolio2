@@ -54,7 +54,7 @@ $('.menu-container > p').on("click", hideMenu);
 //*** SCROLL SECTION *************/
 
 
-
+/*
 var isScrolling = false;
 
 var myScrollEvent =  function(up){
